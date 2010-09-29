@@ -194,6 +194,8 @@ public class NewJFrame extends javax.swing.JFrame {
                     }
                     seriaIncoming.addOrUpdate(X_COUNT, bt.getReciveBytes()/1024);
                     seriaOutgoing.addOrUpdate(X_COUNT, bt.getSendBytes()/1024);
+                    setTitle("D:"+(bt.getReciveBytes()/1024)+" U:"+(bt.getSendBytes()/1024)+" [kB/s]");
+
                 }
             }
         });
