@@ -71,4 +71,11 @@
     nbproject/build-impl.xml file. 
 
     -->
+
+    <target name="-post-jar">
+        <copy todir="${dist.jar.dir}">
+            <fileset dir="." includes="application.properties"/>
+        </copy>
+    </target>
+
 </project>
